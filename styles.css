@@ -109,8 +109,39 @@ footer {
     color: #fff;
 }
 
-#gig-rehesal {
+/* #gig-rehesal {
     background-image: url('b3.jpg');
     background-size: cover;
     background-position: top;
-}
+    min-height: 100vh; 
+    padding-top: 100px; 
+    padding-bottom: 100px;
+    padding: 10px 0;
+    line-height: .5;
+    text-align: center;
+} */
+
+#gig-rehesal {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent vertical scroll */
+  }
+  
+  .scroll-container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  /* Background image section */
+  .scroll-image {
+    width: 300vw; /* 3x the screen width, adjust as needed */
+    height: 100vh;
+    background-image: url('b3.jpg'); /* Replace with your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
