@@ -18,9 +18,9 @@ body {
 }
 
 #portfolio {
-    background-image: url('bred.jpg'); /* Replace with your image file */
+    background-image: url('header.jpg'); /* Replace with your image file */
     background-size: cover;
-    background-position: center;
+    background-position: 50% 42%;
     background-repeat: no-repeat;
 
 }
