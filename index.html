@@ -7,37 +7,63 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="about">
-        <section id="header">
+    <header id="header">
+        <h1>Dan Rennie</h1>
+        <h2>Lighting Designer</h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <h1>Dan Rennie</h1>
-            <h2>Lighting Designer</h2>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
+    <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my website! Here is a brief introduction about myself.</p>
-	    <p>.</p>
         <p>.</p>
         <p>.</p>
         <p>.</p>
         <p>.</p>
-
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
+        <p>.</p>
     </section>
     
     <section id="portfolio">
         <h2>My Work</h2>
         <div class="gallery">
-            <nav>
-                <a href="gig-rehersal.html"><img src="b3.jpg" alt="Button 1"></a>
-                <a href="page2.html"><img src="b2.jpg" alt="Button 2"></a>
-                <a href="page3.html"><img src="b4.jpg" alt="Button 3"></a>
-            </nav>
+            <a href="page1.html" class="portfolio-item">
+                <img src="b3.jpg" alt="Button 1">
+                <div class="overlay">Confetti Christmas Party</div>
+            </a>
+            <a href="page2.html" class="portfolio-item">
+                <img src="b2.jpg" alt="Button 2">
+                <div class="overlay">Space 2 TV Show</div>
+            </a>
+            <a href="page3.html" class="portfolio-item">
+                <img src="b4.jpg" alt="Button 3">
+                <div class="overlay">Project 3</div>
+            </a>
         </div>
     </section>
     
@@ -45,8 +71,30 @@
         <h2>Contact Me</h2>
         <p>If you would like to get in touch, please email me at: Mr.dan.rennie@gmail.com</p>
     </section>
+    
     <footer>
         <p>&copy; 2025 Dan Rennie. All rights reserved.</p>
     </footer>
+    <script>
+        // Add fade-in class when the page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.add('fade-in'); // Add fade-in class
+        });
+    
+        // Add fade-out effect for navigation
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && !href.startsWith('#')) { // Only apply fade for external links
+                    e.preventDefault();
+                    document.body.classList.remove('fade-in'); // Remove fade-in class
+                    document.body.classList.add('fade-out'); // Add fade-out class
+                    setTimeout(() => {
+                        window.location.href = href; // Navigate after fade-out
+                    }, 4000); // Match the CSS transition duration (4 seconds)
+                }
+            });
+        });
+    </script>
 </body>
 </html>
