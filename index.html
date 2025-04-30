@@ -22,31 +22,7 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Welcome to my website! Here is a brief introduction about myself.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
-        <p>.</p>
+        <div class="spacer"></div>
     </section>
     
     <section id="portfolio">
@@ -75,26 +51,5 @@
     <footer>
         <p>&copy; 2025 Dan Rennie. All rights reserved.</p>
     </footer>
-    <script>
-        // Add fade-in class when the page loads
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.add('fade-in'); // Add fade-in class
-        });
-    
-        // Add fade-out effect for navigation
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href && !href.startsWith('#')) { // Only apply fade for external links
-                    e.preventDefault();
-                    document.body.classList.remove('fade-in'); // Remove fade-in class
-                    document.body.classList.add('fade-out'); // Add fade-out class
-                    setTimeout(() => {
-                        window.location.href = href; // Navigate after fade-out
-                    }, 4000); // Match the CSS transition duration (4 seconds)
-                }
-            });
-        });
-    </script>
 </body>
 </html>
