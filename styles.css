@@ -36,7 +36,7 @@ body {
 
 .about-box,
 .Skills-Box,
-.Program-Box {
+.Program-Box{
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     padding: 20px 20px;
@@ -340,7 +340,7 @@ footer {
 
 .dropdown {
     position: absolute;
-    top: 50px; /* Distance from the top */
+    top: 80px; /* Distance from the top */
     right: 50px; /* Distance from the right */
 }
 
@@ -410,4 +410,54 @@ footer {
     text-align: center; /* Center the headers */
     font-size: 50px;
     padding-top: 50px;
+}
+
+.back-button-des {
+    position: absolute; /* Position the button relative to its nearest positioned ancestor */
+    top: 5px; /* Distance from the top */
+    Right: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+
+}
+
+.back-button-des:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+#logod {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
+h4 {
+    margin-left: 50px;
+}
+
+#contact h4 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: inline-block;
+    background-color: rgba(30, 30, 30, 0.5);
+    border-radius: 15px;
+    padding: 12px 24px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.about-box#contact-box {
+    background-color: rgba(30, 30, 30, 0.5);
 }
