@@ -90,7 +90,7 @@ body {
     justify-content: flex-start;
     padding: 10px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
-    color:rgba(0, 0, 0, 0.5);
+    color:rgba(0, 0, 0, 0);
     font-size: 18px;
     text-align: left;
     box-sizing: border-box;
@@ -391,4 +391,23 @@ footer {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/*Design*/
+
+#logod {
+    display: block;
+    margin: 10 auto; /* Center the logo horizontally */
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    opacity: 0.8; /* Slight transparency */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#header h4 {
+    margin-top: 10px; /* Add spacing below the logo */
+    text-align: center; /* Center the headers */
+    font-size: 50px;
+    padding-top: 50px;
 }
