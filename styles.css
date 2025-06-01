@@ -19,6 +19,16 @@ body {
     transition: opacity .8s ease-in-out;
 }
 
+a {
+    color: #ffffff;         /* Your desired link color */
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #ff6600;         /* Color on hover */
+}
+
 #about {
 
     background-size: cover;
@@ -110,6 +120,26 @@ body {
     background: rgba(0, 0, 0, 0.4);
     color: rgb(255, 255, 255);
     transform: scale(1.1);
+}
+/* Style overlay links to match overlay text */
+.about-image-container .overlay a {
+    color: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.about-image-container .overlay a:hover {
+    color: #ffd700; /* or any highlight color you like */
+    text-decoration: underline;
+}
+
+.about-image-container .overlay {
+    pointer-events: auto;
+}
+
+.about-image-container .overlay a {
+    pointer-events: auto;
 }
 .spacer {
     height: 10px; /* Adjust the height as needed */
@@ -474,4 +504,35 @@ h4 {
     margin-top: 35px;
     margin-left: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.program-image-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.program-image-container .program-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: rgba(0,0,0,0.4);
+    padding: 8px 16px;
+    border-radius: 15px 0 15px 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.program-image-container:hover .program-overlay {
+    opacity: 1;
+}
+
+.Program-Box {
+    overflow: visible;
+}
+
+.program-image-container .program-overlay {
+    z-index: 2;
 }
