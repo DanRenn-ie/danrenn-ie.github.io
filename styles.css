@@ -113,7 +113,7 @@ a:hover {
 
 .about-image-container .overlay p:last-child {
     margin-top: auto;
-    white-space: nowrap; /* Prevent line breaks */
+
     width: 100%;
     text-align: left;
 }
