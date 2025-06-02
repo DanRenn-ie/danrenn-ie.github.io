@@ -111,9 +111,15 @@ a:hover {
     transition: background 0.3s, color 0.3s, transform 0.3s ease-in-out;
 }
 
+.about-image-container .overlay,
+.about-image-container .overlay p,
+.about-image-container .overlay a {
+    white-space: normal !important;
+    word-break: break-word;
+}
+
 .about-image-container .overlay p:last-child {
     margin-top: auto;
-
     width: 100%;
     text-align: left;
 }
